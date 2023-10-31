@@ -17,7 +17,7 @@ ol, ul {
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;  /* Change the primary font to Roboto */
+    font-family: 'Georgia', Serif;  /* Change the primary font to Roboto */
     color: #444; /* Dark grey for the text */
     background-color: #f7f7f7; /* Light grey background */
 }
@@ -27,11 +27,20 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
 }
+
 
 .main {
     flex: 1 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px; /* Or whatever max-width you prefer */
+    min-height: 70vh; /* previously existing */
+    padding: 40px;   /* previously existing */
 }
+
+
 
 .header, .footer {
     flex: 0 0 auto;
@@ -90,6 +99,14 @@ body {
 .nav a:hover {
     background-color: #555; /* Dark grey background on hover */
 }
+
+.nav li.active a {
+    color: #f7f7f7; 
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
 
 /* Main Content */
 
