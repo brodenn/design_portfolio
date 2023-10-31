@@ -139,9 +139,17 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;  /* Changing headings font */
-    margin-bottom: 0.6em;
+    margin-bottom: 0.1em;
     font-weight: bold;
 }
 
 /* You can continue to add or adjust other styles as needed. */
 
+.main-image {
+    margin-top: 20px;  /* Adds space above the image. Adjust the value as needed */
+    margin-bottom: 20px; /* Adds space below the image. Adjust the value as needed */
+    width: 50%;  /* Sets the image width to 50% of its container. Adjust the value as needed */
+    display: block; /* Makes the image a block element to apply margins */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto;
+}
