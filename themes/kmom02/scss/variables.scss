@@ -1,5 +1,6 @@
-$font-color: #000000;
+//variables.scss
+$font-color: rgb(223, 223, 223);
 $font-alternative-color: #fff;
-$accent-color: #ee6c4d;
-$background-color: #d7dadd;
+$background-color: #797979;
 $background-alternative-color: #e0fbfc;
+$link-hover-color: lighten($link-color, 10%);

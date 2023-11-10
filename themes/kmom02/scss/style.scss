@@ -1,3 +1,12 @@
+//style.scss
+// Define the navbar color and size variables
+$navbar-background-color: #333;
+$navbar-height: 80px;
+
+// Define the footer color
+$footer-background-color: #444;
+
+// Import Font Awesome and other styles
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
@@ -21,8 +30,70 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; // Ensure the body takes up at least the viewport height
 }
 
 * {
     color: $font-color;
 }
+
+// Style the navbar
+.nav {
+    background-color: $navbar-background-color;
+    height: $navbar-height;
+}
+
+// Modify the navbar links
+.nav ul {
+    li {
+        a {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+}
+
+// Add padding to the main content area
+.main {
+    flex-grow: 1; // Allow the main content area to grow and take up remaining space
+    padding: 20px; // Add padding to all sides of the main content area (adjust as needed)
+}
+
+// Style the footer with a different background color
+.container {
+    background-color: $footer-background-color;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    position: relative; // Add relative positioning to the footer container
+}
+
+// Add a border-bottom to the header for a line below it
+.header {
+    background-color: $navbar-background-color;
+    border-bottom: 1px solid #ccc;
+}
+
+// Position the social icons at the bottom right of the footer
+.social {
+    position: absolute;
+    bottom: 20px; // Adjust the distance from the bottom as needed
+    right: 20px; // Adjust the distance from the right as needed
+}
+
+// Add a CSS rule to style the titles in the header for contrast
+.title a h1,
+.title a h2,
+.title a h3,
+.title a h4,
+.title a h5,
+.title a h6 {
+    color: #fff; // Set the text color to white or another contrasting color
+}
+
+/* Style the "Niklas Portfolio" title in the header */
+.header .site-header .title h1 {
+    color: #fff; /* Replace with the color you want */
+}
+

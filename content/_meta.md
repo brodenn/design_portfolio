@@ -1,9 +1,13 @@
 ---
-Logo: assets/img/m.jpg
+#_meta.md
+Logo: assets/img/me.jpg
 Tagline: Niklas portfolio
 Social:
-- title: Link till sidans github repo.
-  url: https://github.com/brodenn/design_portfolio
-  icon: fab fa-github
-  
+  - title: Link till sidans GitHub repo.
+    url: https://github.com/brodenn/design_portfolio
+    icon: fab fa-github
+  - title: Link till min LinkedIn profil.
+    url: https://www.linkedin.com/in/yourusername
+    icon: fab fa-linkedin
+
 ---
