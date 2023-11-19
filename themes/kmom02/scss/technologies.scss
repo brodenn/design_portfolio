@@ -1,0 +1,36 @@
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em; 
+}
+
+.tech-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    min-width: 200px; 
+    height: 150px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+    .tech-icon {
+        font-size: 4em; 
+        margin-bottom: 0.1em;
+    }
+
+    &:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .technologies-grid {
+        grid-template-columns: 1fr; 
+    }
+}

@@ -1,8 +1,4 @@
-//style.scss
-$navbar-background-color: #333;
-$navbar-height: 80px;
-
-$footer-background-color: #444;
+@import 'variables';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -10,20 +6,13 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 @import '../../node_modules/normalize.css/normalize';
-@import 'variables';
-
+@import 'technology';
+@import 'technologies';
 @import 'blockquotes';
 @import 'code';
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
-* {
-    font-family: 'Roboto', sans-serif;
-}
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-}
 
 body {
     background-color: $background-color;
@@ -33,51 +22,103 @@ body {
 }
 
 * {
+    font-family: 'Roboto', sans-serif;
     color: $font-color;
 }
 
 .nav {
     background-color: $navbar-background-color;
     height: $navbar-height;
-}
 
-.nav ul {
-    li {
-        a {
-            color: #fff;
-            font-size: 18px;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.3em 0;
+        list-style: none;
+
+        li {
+            padding: 0 1em;
+
+            a {
+                color: $font-alternative-color;
+                font-size: 18px;
+            }
         }
     }
 }
+
+
+.nav-toggle {
+    display: none;
+}
+
 
 .main {
     flex-grow: 1;
     padding: 20px;
 }
 
+
 .container {
     background-color: $footer-background-color;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $border-color;
     padding-top: 20px;
     position: relative;
+
+    .social {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
 }
+
 
 .header {
     background-color: $navbar-background-color;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $border-color;
 }
 
-.social {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+
+.title a {
+    h1, h2, h3, h4, h5, h6 {
+        color: $font-alternative-color;
+    }
 }
 
-.title a h1,
-.title a h2,
-.title a h3,
-.title a h4,
-.title a h5,
-.title a h6 {
-    color: #fff;
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding-bottom: 1em;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        li a {
+            display: block;
+            padding: 0.5em 0;
+        }
+    }
+
+    .nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .main {
+        padding: 10px;
+    }
 }

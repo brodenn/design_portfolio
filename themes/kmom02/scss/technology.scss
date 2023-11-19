@@ -1,0 +1,15 @@
+.technology-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr; 
+    gap: 1em;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; 
+        
+        .sidebar {
+            display: none;
+        }
+    }
+}
+
+

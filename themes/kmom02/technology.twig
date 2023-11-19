@@ -1,0 +1,34 @@
+{#technology.twig#}
+{# Template för att visa en teknologi #}
+{# Använder en Markdown-fil för att visa innehållet #}
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="technology-layout">
+            <aside class="sidebar">
+                <!-- Sidebar with links to different technologies -->
+                <ul>
+{% for page in pages('technology', depth=1) %}
+    <li{% if page.id starts with current_page.id %} class="active"{% endif %}>
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    </li>
+{% endfor %}
+
+                </ul>
+            </aside>
+
+<main class="technology-content">
+    <!-- Main content area for technology details -->
+    {{ current_page.content | raw }}
+</main>
+
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
