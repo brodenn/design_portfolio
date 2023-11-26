@@ -6506,8 +6506,8 @@ pre code {
 }
 
 body {
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #2a2a2a;
+  color: #f1f1f1;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -6515,7 +6515,7 @@ body {
 }
 
 .nav {
-  background-color: #fff;
+  background-color: #1e1e1e;
   height: 40px;
 }
 .nav ul {
@@ -6528,7 +6528,7 @@ body {
   padding: 0 1em;
 }
 .nav ul li a {
-  color: #000;
+  color: #999;
   font-size: 18px;
 }
 
@@ -6542,8 +6542,8 @@ body {
 }
 
 .container {
-  background-color: #eee;
-  border-top: 1px solid #ddd;
+  background-color: #242424;
+  border-top: 1px solid #3a3a3a;
   padding-top: 20px;
   position: relative;
 }
@@ -6554,12 +6554,12 @@ body {
 }
 
 .header {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 .title a h1, .title a h2, .title a h3, .title a h4, .title a h5, .title a h6 {
-  color: #000;
+  color: #999;
 }
 
 @media (max-width: 768px) {

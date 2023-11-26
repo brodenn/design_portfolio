@@ -1,10 +1,23 @@
-$font-color: rgb(223, 223, 223);
-$font-alternative-color: #fff;
-$background-color: #797979;
-$background-alternative-color: #e0fbfc;
-$navbar-background-color: #333;
-$footer-background-color: #444;
-$code-background-color: #f5f5f5;
-$border-color: #ccc;
+// Ljust tema färger
+$light-background-color: #f5f5f5; // Light grey background
+$light-font-color: #333; // Dark grey for general text
+$light-font-alternative-color: #000; // Black for higher contrast text, like navbar and titles
+$light-navbar-background-color: #fff; // White navbar background
+$light-footer-background-color: #eee;
+$light-border-color: #ddd;
 
-$navbar-height: 80px;
+// Mörkt tema färger (for reference)
+$dark-background-color: #2a2a2a;
+$dark-font-color: #f1f1f1;
+$dark-font-alternative-color: #999;
+$dark-navbar-background-color: #1e1e1e;
+$dark-footer-background-color: #242424;
+$dark-border-color: #3a3a3a;
+
+$navbar-height: 40px;
+
+// Exempel på färgdefinitioner
+$border-color: #ccc; // Ersätt detta värde med önskad färg
+$code-background-color: #f5f5f5; // Ersätt detta värde med önskad färg
+
+// Fler variabler...

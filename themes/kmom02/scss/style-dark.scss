@@ -1,4 +1,4 @@
-//style.scss
+//style-dark.scss
 @import 'variables';
 
 @import '../../shared/fontawesome/scss/fontawesome';
@@ -15,8 +15,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 
 body {
-    background-color: $light-background-color;
-    color: $light-font-color;
+    background-color: $dark-background-color;
+    color: $dark-font-color;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -24,7 +24,7 @@ body {
 }
 
 .nav {
-    background-color: $light-navbar-background-color;
+    background-color: $dark-navbar-background-color;
     height: $navbar-height;
 
     ul {
@@ -37,7 +37,7 @@ body {
             padding: 0 1em;
 
             a {
-                color: $light-font-alternative-color;
+                color: $dark-font-alternative-color;
                 font-size: 18px;
             }
         }
@@ -54,8 +54,8 @@ body {
 }
 
 .container {
-    background-color: $light-footer-background-color;
-    border-top: 1px solid $light-border-color;
+    background-color: $dark-footer-background-color;
+    border-top: 1px solid $dark-border-color;
     padding-top: 20px;
     position: relative;
 
@@ -67,13 +67,13 @@ body {
 }
 
 .header {
-    background-color: $light-navbar-background-color;
-    border-bottom: 1px solid $light-border-color;
+    background-color: $dark-navbar-background-color;
+    border-bottom: 1px solid $dark-border-color;
 }
 
 .title a {
     h1, h2, h3, h4, h5, h6 {
-        color: $light-font-alternative-color;
+        color: $dark-font-alternative-color;
     }
 }
 
@@ -114,4 +114,4 @@ body {
     }
 }
 
-// Ytterligare stilinställningar för ljusa temat...
+// Ytterligare stilinställningar för mörka temat...
