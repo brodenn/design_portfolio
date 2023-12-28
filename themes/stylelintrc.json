@@ -5,7 +5,7 @@
     "rules": {
         "indentation": [
             4,
-            {
+            {       
                 "except": [
                     "value"
                 ]
