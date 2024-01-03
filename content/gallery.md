@@ -3,7 +3,7 @@ Title: Gallery
 Description: gallery page
 Template: gallery
 ---
-
+<div class="content-container">
 <div class="gallery-grid">
 <div class="gallery-img">
     <a href="image/gallery/img1.jpg">
@@ -69,16 +69,9 @@ Template: gallery
         </picture>
     </a>
 </div>
-<div class="gallery-img">
-    <a href="image/gallery/img9.jpg">
-        <picture>
-            <source media="(max-width: 980px)" srcset="image/gallery/img9.jpg?area=0,40,0,0&save-as=jpg&width=50%&q=30">
-            <img src="image/gallery/img9.jpg?area=0,40,0,0&save-as=jpg&width=50%&q=30" alt="My first website" href="image/gallery/img9.jpg"> 
-        </picture>
-    </a>
-</div>
 </div>
 
 <div class="embed-container space-between">
-    <iframe src="https://www.youtube.com/embed/gCwjLPBqpa0" frameborder="0" allowfullscreen></iframe>
+    <iframe  title="natur video" src="https://www.youtube.com/embed/BHACKCNDMW8" frameborder="0" allowfullscreen></iframe>
+</div>
 </div>

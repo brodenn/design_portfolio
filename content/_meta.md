@@ -1,6 +1,6 @@
 ---
 #_meta.md
-Logo: assets/img/me.jpg
+Logo: assets/img/design-thinking2.png
 Tagline: Niklas portfolio
 Social:
   - title: Link till sidans GitHub repo.

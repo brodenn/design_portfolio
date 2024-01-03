@@ -1,6 +1,6 @@
 ---
-Title: Colors
-Description: Colors
+Title: Färger
+Description: Färger
 Template: analys
 ---
 # Kontrast och Karaktär: En Studie av Färg- och Typografistrategier på Amazon, Röda Korset, och Aftonbladet

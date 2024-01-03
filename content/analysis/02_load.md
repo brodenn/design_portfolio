@@ -1,9 +1,9 @@
 ---
-Title: Webbsides Prestanda och Laddningstids Analys
+Title: Webbsidors Prestanda och Laddningstid
 Description: En analys av laddningstid och prestanda för tre webbplatser
 Template: analys
 ---
-# Webbsides Prestanda och Laddningstids Analys
+# Webbsidors Prestanda och Laddningstid
 
 ## Urval
 De valda webbplatserna för denna analys är Amazon.se, YouTube.com och Aftonbladet.se. Dessa sidor representerar olika sektorer: e-handel, videostreaming och nyheter, och valdes på grund av deras populäritet och varierande innehållstyper.

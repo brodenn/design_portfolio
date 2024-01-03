@@ -14,6 +14,9 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'gallery';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
+html body {
+    margin: 10px;
+}
 
 body {
     background-color: $light-background-color;
@@ -22,11 +25,22 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
+
+}
+
+.title {
+    margin: 0.5em;
+}
+
+.header {
+    background-color: $light-navbar-background-color;
+    border-bottom: 1px solid $light-border-color;
+    flex-shrink: 0; 
 }
 
 .nav {
-    background-color: $light-navbar-background-color;
     height: $navbar-height;
+    background-color: $light-navbar-background-color;
 
     ul {
         display: flex;
@@ -45,12 +59,35 @@ body {
     }
 }
 
+.nav li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: $light-font-alternative-color;
+    display: inline-block;
+    transform: translateY(0);
+}
+
+.nav li a:hover, .nav li a:focus {
+    color: darken($light-font-alternative-color, 20%);
+    transform: translateY(-5px);
+}
+
+.nav li.active a {
+    color: $active-text-color;
+    font-weight: bold;
+}
+
+.nav li.active a:hover, .nav li.active a:focus {
+    color: $active-text-color;
+    transform: translateY(0);
+    cursor: default;
+}
+
 .nav-toggle {
     display: none;
 }
 
 .main {
-    flex-grow: 1;
+    flex-grow: 1; 
     padding: 20px;
 }
 
@@ -67,11 +104,6 @@ body {
     }
 }
 
-.header {
-    background-color: $light-navbar-background-color;
-    border-bottom: 1px solid $light-border-color;
-}
-
 .title a {
     h1, h2, h3, h4, h5, h6 {
         color: $light-font-alternative-color;
@@ -81,21 +113,28 @@ body {
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
+        padding-top: 0px; 
     }
 
-    .nav ul {
-        flex-direction: column;
-        padding-bottom: 1em;
+    .nav {
 
-        li {
-            display: flex;
+        padding-bottom: 200px; 
+
+        ul {
             flex-direction: column;
-            text-align: center;
-        }
+            align-items: flex-start; 
+            width: 100%; 
+            margin-top: 0; 
 
-        li a {
-            display: block;
-            padding: 0.5em 0;
+            li {
+                width: 100%; 
+                margin-bottom: 10px; 
+            }
+
+            li a {
+                display: block;
+                padding: 0.5em 1em;
+            }
         }
     }
 
@@ -112,5 +151,6 @@ body {
 
     .main {
         padding: 10px;
+        margin-top: 0; 
     }
 }
